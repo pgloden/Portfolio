@@ -204,7 +204,7 @@ ul {
 }
 
 .project-1-card {
-    background-image: url(/images/project-image-background-1.avif);
+    background-image: url(images/project-image-background-1.avif);
     background-size: cover;
     background-repeat: no-repeat;
     color: rgb(234, 235, 235);
@@ -212,7 +212,7 @@ ul {
 }
 
 .project-2-card {
-    background-image: url(/images/project-image-background-2.avif);
+    background-image: url(images/project-image-background-2.avif);
     background-size: cover;
     background-repeat: no-repeat;
     color: rgb(234, 235, 235);
@@ -220,7 +220,7 @@ ul {
 }
 
 .project-3-card {
-    background-image: url(/images/project-image-background-3.avif);
+    background-image: url(images/project-image-background-3.avif);
     background-size: cover;
     background-repeat: no-repeat;
     color: rgb(234, 235, 235);
