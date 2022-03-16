@@ -1,0 +1,299 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lora', sans-serif;
+    font-size: 1.25em;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    box-sizing: border-box;
+    flex-grow: 1;
+    flex-shrink: 1;
+    justify-content: center;
+    background-color: rgb(29, 31, 32);
+    color: rgb(234, 235, 235);
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+ul {
+    font-size: 1.5rem;
+}
+
+.navbar {
+    position: sticky;
+    background-color: rgba(29, 31, 32, .2);
+    color: rgb(234, 235, 235);
+    display: flex;
+    top: 0;
+    height: 3vh;
+    flex-basis: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    transition: all linear 200ms;
+}
+
+.navbar-link {
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: rgb(234, 235, 235);
+    padding: 10px;
+    font-weight: bold;
+    transition: transform 200ms;
+}
+
+.navbar .fa-house,
+.navbar .fa-sun {
+    color: rgb(234, 235, 235);
+    cursor: pointer;
+    transition: all linear 200ms;
+}
+
+.navbar-link:hover,
+.fa-house:hover {
+    color: rgb(53, 160, 177);
+}
+
+.nav--hidden {
+    transform: translateY(-100px);
+}
+
+.home-page {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    text-align: center;
+    min-height: 95vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home-page-button {
+    padding: 20px;
+    font-size: 1.15rem;
+    font-weight: bold;
+    margin: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: rgb(234, 235, 235);
+    color: rgb(29, 31, 32);
+    transition: background-color 200ms;
+}
+
+.home-page-button:hover {
+    background-color: rgb(53, 160, 177);
+}
+
+.home-page-button i {
+    transition: transform 400ms;
+}
+
+.home-page-button:hover i {
+    transform: rotate(90deg);
+}
+
+.about-me-container {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.about-me-intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 45%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.about-me-intro-container h2 {
+    text-align: center;
+}
+
+.about-me-intro-container p,
+.about-me-languages {
+    max-width: 90%;
+}
+
+.about-me-languages li {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    gap: 15px;
+    align-items: center;
+    color: rgb(234, 235, 235);
+}
+
+.fa-html5,
+.fa-css3-alt,
+.fa-js {
+    color: rgb(53, 160, 177);
+}
+
+.about-me-image-container {
+    display: flex;
+    min-width: 45%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-me-image {
+    max-width: 50%;
+    max-height: 50%;
+    margin-bottom: 15px;
+}
+
+.contact-links-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.projects-title {
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border-radius: 5px;
+    min-height: 400px;
+    max-width: 350px;
+    background-color: rgb(234, 235, 235);
+    color: rgb(29, 31, 32);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex: 1;
+    text-align: center;
+    transition: all linear 200ms;
+}
+
+.project-1-card {
+    background-image: url(/images/project-image-background-1.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(234, 235, 235);
+    text-shadow: 2px 2px rgb(0, 0, 0);
+}
+
+.project-2-card {
+    background-image: url(/images/project-image-background-2.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(234, 235, 235);
+    text-shadow: 2px 2px rgb(0, 0, 0);
+}
+
+.project-3-card {
+    background-image: url(/images/project-image-background-3.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(234, 235, 235);
+    text-shadow: 2px 2px rgb(0, 0, 0);
+}
+
+ul,
+li {
+    list-style: none;
+    text-align: left;
+    line-height: 2rem;
+}
+
+.card:hover {
+    box-shadow: 4px 4px 2px 1px rgb(234, 235, 235);
+    transform: translate(-5px, -5px)
+}
+
+.footer-container {
+    background-color: rgb(29, 31, 32);
+    color: rgb(234, 235, 235);
+    flex-direction: row;
+    min-height: 1rem;
+    bottom: 0;
+    position: relative;
+    border-top: 5px solid rgb(234, 235, 235);
+}
+
+.footer-container p {
+    text-align: center;
+    font-size: .75em;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.contact-page-title {
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+}
+
+.fa-envelope,
+.fa-github,
+.fa-linkedin-in {
+    color: rgb(234, 235, 235);
+    gap: 20px;
+    padding: 15px;
+    border-radius: 50%;
+    transition: background-color linear 200ms;
+}
+
+.fa-envelope:hover,
+.fa-github:hover,
+.fa-linkedin-in:hover {
+    background-color: rgb(53, 160, 177);
+}
+
+@media only screen and (max-width: 600px) {
+    body,
+    h1,
+    h2,
+    p,
+    li,
+    ul,
+    .home-page-button {
+        font-size: 24px !important;
+    }
+}
